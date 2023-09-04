@@ -11,6 +11,6 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 git clone https://github.com/BlackstormCoder/nvchad_custom 
 cd nvchad_custom  
-cp  *  ~/.config/nvim/custom
+cp  *  ~/.config/nvim/lua/custom
 
 ```
