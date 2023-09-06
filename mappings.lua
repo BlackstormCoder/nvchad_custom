@@ -18,6 +18,9 @@ M.dap_python = {
   }
 }
 
+
+
+
 M.transparency =  {
   n = {
     ["<leader>tt"] = {
@@ -93,6 +96,9 @@ M.general = {
     ["<C-j>"] = {"<cmd>wincmd j<CR>", "Move window down"},
     ["<C-k>"] = {"<cmd>wincmd k<CR>", "Move window up"},
     ["<C-l>"] = {"<cmd>wincmd l<CR>", "Move window right"},
+    ["d"] = {"\"_d", "Delete without yanking"},
+    ["c"] = {"\"_c", "Delete and enter in insert mode without yanking"},
+    ["<C-s>w"] = {"<cmd>wqall!<CR>", "Save all and exit"},
 --    ["<C-=>"] = {"<cmd>vertical resize +5<CR>", "Resize window wider"},
 --    ["<C-->"] = {"<cmd>vertical resize -5<CR>", "Resize window narrower"},
 --    ["<C-+>"] = {"<cmd>horizontal resize +5<CR>", "Resize window taller"},
@@ -132,6 +138,7 @@ M.general = {
     ["<A-k>"] = {":move '<-2<CR>gv-gv", "Move text up (Visual Block)"},
     ["p"] = {"\"_dP", "Paste without replacing"},
     ["<C-c>"] = {"<Esc>", "Exit insert mode"},
+    ["<C-s>w"] = {"<cmd>wqall!<CR>", "Save all and exit"},
   },
   t = {
     ["<C-h>"] = {"<C-\\><C-N><C-w>h", "Move terminal left"},
@@ -141,6 +148,7 @@ M.general = {
   },
   i = {
     ["<C-c>"] = {"<Esc>", "Exit insert mode"},
+    ["<C-s>w"] = {"<cmd>wqall!<CR>", "Save all and exit"},
     -- ... other mappings ...
   },
 }
